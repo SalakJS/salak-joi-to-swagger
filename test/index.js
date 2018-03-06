@@ -103,14 +103,27 @@ describe('swagger converts', () => {
     it('test enum', () => {
       simpleTest(Joi.string().valid('A', 'B', 'C', null), {
         type: 'string',
-        enum: ['A', 'B', 'C']
+        enum: ['A', 'B', 'C'],
+        'x-nullable': true
       })
     })
+  })
+
+  describe('test boolean', () => {
     it('test boolean', () => {
       simpleTest(Joi.boolean(), {
         type: 'boolean'
       })
     })
+    it('test boolean with null', () => {
+      simpleTest(Joi.boolean().allow(null), {
+        type: 'boolean',
+        'x-nullable': true
+      })
+    })
+  })
+
+  describe('test binary', () => {
     it('test binary', () => {
       simpleTest(Joi.binary(), {
         type: 'string',

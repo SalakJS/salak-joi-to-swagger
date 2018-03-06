@@ -1,6 +1,6 @@
 {
   "name": "salak-joi-to-swagger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert joi schema to swagger definitions",
   "main": "index.js",
   "scripts": {
