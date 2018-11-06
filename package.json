@@ -1,6 +1,6 @@
 {
   "name": "salak-joi-to-swagger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "convert joi schema to swagger definitions",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": "SalakJS/salak-joi-to-swagger",
   "dependencies": {
-    "joi": "^12.0.0",
+    "joi": "^14.0.4",
     "lodash": "^4.17.5"
   },
   "devDependencies": {
